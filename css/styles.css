@@ -1,3 +1,5 @@
+/* Global style */
+
 * {
     margin: 0;
     padding: 0;
@@ -9,6 +11,8 @@ body {
     background-color: #111b24;
     color: #f0f8ff;
 }
+
+/* Header styles  */
 
 .container-header {
     width: 80%;
@@ -47,6 +51,8 @@ hr {
     width: 80%;
 }
 
+/* Main image styles */
+
 .code-img {
     width: 100%;
     height: auto;
@@ -61,6 +67,54 @@ hr {
     color: #bcbcbc;
 }
 
+/* Featured work section styles */
+
+.featured {
+    font-size: 1.1em;
+    margin: 3%;
+}
+
+/* Projects container styles */
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: auto;
+    margin: 4% 10%;
+}
+
+.pro-box {
+    width: 100%;
+    padding: 4%;
+    margin: 4%;
+    border: 1px solid #1964a5;
+}
+
+.pro-box .pro-img {
+    width: 75%;
+    margin: auto 7%;
+    height: auto;
+}
+
+.pro-title {
+    text-align: center;
+    margin: 5%;
+}
+
+.pro-link {
+    margin-left: 26%;
+}
+
+/* footer styles */
+
+.footer {
+    text-align: center;
+    margin: 4%;
+}
+
+/* fix sizes of the udacity logo and title */
+
 @media screen and (min-width: 350px) {
     .U-logo-img {
         width: 50%;
@@ -69,6 +123,8 @@ hr {
         font-size: 1em;
     }
 }
+
+/* fix sizes of the udacity logo and title in bigger sizes */
 
 @media screen and (min-width: 500px) {
     .U-logo-img {
@@ -84,6 +140,8 @@ hr {
 }
 
 @media screen and (min-width: 630px) {
+
+    /* styles properties of the header for larger sizes */
     .container-header {
         display: flex;
         flex-flow: row;
@@ -106,6 +164,9 @@ hr {
     .title h2 {
         font-size: 1em;
     }
+
+    /* main image properties for large screen */
+
     .main-image {
         max-width: 80%;
         margin: 0 auto;
@@ -113,5 +174,35 @@ hr {
     .code-img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* projects container styles */
+
+    .featured {
+        margin-left: 10%;
+        font-size: 1.3em;
+    }
+    .projects-container {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 80%;
+        height: auto;
+        margin: 2% auto;
+    }
+    .pro-box {
+        flex-basis: 40%;
+        padding: 1%;
+        margin: 1%;
+    }
+    .pro-box .pro-img {
+        width: 100%;
+        margin: 5% auto;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 920px) {
+    .pro-box {
+        flex-basis: 30%;
     }
 }

@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #111b24;
+    color: #f0f8ff;
+}
+
+.container-header {
+    width: 80%;
+    margin: 0 auto;
+    padding: 2%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 30%;
+    height: auto;
+}
+
+.U-logo-img {
+    width: 100%;
+    height: auto;
+    margin: 18% 0 auto;
+}
+
+.title {
+    margin-top: 8%;
+    text-align: center;
+}
+
+.title h1 {
+    font-size: 1em;
+}
+
+.title h2 {
+    font-size: 0.6em;
+}
+
+hr {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.code-img {
+    width: 100%;
+    height: auto;
+    margin: 2% auto;
+}
+
+.caption {
+    margin-top: -2%;
+    font-size: 0.7em;
+    padding-left: 5%;
+    background-color: rgba(14, 83, 144, 0.35);
+    color: #bcbcbc;
+}
+
+@media screen and (min-width: 350px) {
+    .U-logo-img {
+        width: 50%;
+    }
+    .title h1 {
+        font-size: 1em;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .U-logo-img {
+        width: 50%;
+        margin-top: 10%;
+    }
+    .title {
+        margin-top: 5%;
+    }
+    .title h1 {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (min-width: 630px) {
+    .container-header {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+    }
+    .logo {
+        margin: 2% 0 0;
+        width: 35%;
+    }
+    .U-logo-img {
+        width: 40%;
+        margin: 0;
+    }
+    .title {
+        margin-top: 4%;
+    }
+    .title h1 {
+        font-size: 1.6em;
+    }
+    .title h2 {
+        font-size: 1em;
+    }
+    .main-image {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+    .code-img {
+        max-width: 100%;
+        height: auto;
+    }
+}
